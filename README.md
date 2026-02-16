@@ -48,8 +48,41 @@ See `INSTALLATION.md` for detailed instructions and troubleshooting.
 
 - `main.js` - Plugin code
 - `manifest.json` - Plugin metadata
-- `INSTALLATION.md` - Complete installation instructions
+- `README.md` - Complete installation instructions
 - `styles.css` - stylesheet
+
+## Supported Formats
+
+- `.mp3`
+- `.wav`
+- `.ogg`
+- `.m4a`
+
+## Troubleshooting
+
+### Audio player is not shown
+
+1. **Check if the plugin is active:**
+   - Settings → Community Plugins → "Bases Audio Player" is turned on
+
+2. **Check the file path:**
+   - Make sure the audio file actually exists in your vault
+   - The path in the frontmatter must be a valid wikilink: `[[file.mp3]]`
+
+3. **Reload Obsidian:**
+   - Cmd/Ctrl + R to reload Obsidian
+
+4. **Check the console:**
+   - Open Developer Tools (Cmd/Ctrl + Shift + I)
+   - Look in the Console tab for error messages
+  
+## Technical Details
+
+The plugin works by:
+1. Monitoring the DOM for Bases views
+2. Detecting links to audio files
+3. Replacing them with HTML5 `<audio>` elements
+4. Using the Obsidian vault adapter for correct file paths
 
 ---
 
