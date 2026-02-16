@@ -29,10 +29,6 @@ Music: [[my-music.mp3]]
 
 Open a Bases view (table or card) and the audio link automatically becomes a player!
 
-## ❓ Problems?
-
-See `INSTALLATION.md` for detailed instructions and troubleshooting.
-
 ## 🎵 Features
 
 - ✅ Works in table view
